@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Ti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Loja <span>Ti</span></h1>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#cadastro">Cadastro</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section id="inicio" class="inicio">
+        <h2>Bem-vindo à Loja Ti!</h2>
+        <p>Produtos e serviços de tecnologia para você.</p>
+        <a href="#produtos" class="botao">Ver produtos</a>
+    </section>
+
+    <section id="produtos">
+        <h2>Nossos Produtos</h2>
+
+        <div class="produtos">
+            <div class="card">
+                <h3> Notebook</h3>
+                <p>Para estudar e trabalhar.</p>
+            </div>
+
+            <div class="card">
+                <h3> Teclado</h3>
+                <p>Mais praticidade para digitar.</p>
+            </div>
+
+            <div class="card">
+                <h3> Mouse</h3>
+                <p>Conforto para o seu computador.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <p>Manutenção de computadores, montagem de PCs e suporte técnico.</p>
+    </section>
+
+    <section id="cadastro">
+        <h2>Cadastro de Clientes</h2>
+        <p>Preencha os dados para se cadastrar na nossa loja.</p>
+
+        <form action="../back/index.php?rota=clientes/create" method="post">
+            <input type="text" name="nome" placeholder="Nome completo" required>
+
+            <input type="email" name="email" placeholder="E-mail" required>
+
+            <input type="tel" name="telefone" placeholder="Telefone">
+
+            <input type="text" name="endereco" placeholder="Endereço">
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>E-mail: contato@lojati.com.br</p>
+        <p>Telefone: (12) 12345-6789</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Loja Ti - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
